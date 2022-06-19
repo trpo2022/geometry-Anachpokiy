@@ -74,9 +74,7 @@ int main()
         }
         check = 0;
     }
-
     // checking inersect
-
     // Output of results
 
     int fig_counter = Triangle_counter + Circle_counter + 1;
