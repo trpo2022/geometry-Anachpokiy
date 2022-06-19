@@ -43,7 +43,6 @@ Point Point_analysis(int string, int& lfound, std::string storage[])
         str_x.append(str, l_number, r_number);
         P.x = atof(str_x.c_str());
 
-        // Y analysis
         r_number = str.find_last_of(numbers, str.find_first_of(",", lfound));
         for (l_number = r_number;
              numbers.find(str[l_number]) != std::string::npos;
@@ -53,7 +52,6 @@ Point Point_analysis(int string, int& lfound, std::string storage[])
         str_y.append(str, l_number, r_number);
         P.y = atof(str_y.c_str());
 
-        // New left border
         lfound = str.find_first_of(",", lfound) + 1;
     } else {
         printf("Error ");
